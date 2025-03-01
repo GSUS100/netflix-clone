@@ -5,7 +5,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -15,10 +15,21 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+
+  @apply bg-zinc-900 h-full overflow-x-hidden;
 }
+
+#__next {
+  @apply h-full;
+}
+
+html {
+  @apply h-full;
+}
+
